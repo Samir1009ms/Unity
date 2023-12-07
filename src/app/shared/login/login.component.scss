@@ -1,14 +1,53 @@
-.img {
+.login {
     background-image: url("../../../assets/img/bgImg.png");
     background-repeat: round;
-    // background-size: contain;
 
+    // background-size: cover;
+    // background-position: center center;
+    // background-attachment: fixed;
+    .container {
+        height: 60%;
+
+        &__left {
+
+            &-top {
+                &_icons {
+
+                    svg {
+                        &:first-child {
+                            margin-bottom: 17px;
+                        }
+                    }
+                }
+
+                .text_info {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    color: var(--color-white-white, #FFF);
+                    font-feature-settings: 'clig' off, 'liga' off;
+
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &__right {
+            background: #1b1d21a3;
+            border-radius: 16px;
+            padding: 20px;
+            height: 100%;
+
+            .images {
+                border-radius: 12px;
+                height: 96px;
+            }
+        }
+    }
 
 }
 
-.container {
-    height: 60%;
-}
 
 .images {
     border-radius: 12px;

@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, LoadChildrenCallback } from '@angular/router';
+import { isAuthenticadetGuard } from './guards/is-authenticadet.guard';
+import { LoginComponent } from './shared/login/login.component';
 
 const routes: Routes = [
+  { path: '', loadChildren: () => import('./layouts/layouts.module').then(m => m.LayoutsModule), canActivate: [isAuthenticadetGuard] },
   { path: '', loadChildren: () => import('./shared/shared.module').then(m => m.SharedModule) },
 ];
 
