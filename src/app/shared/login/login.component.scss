@@ -91,6 +91,10 @@
             padding: 20px;
             height: 100%;
 
+            @media screen and (min-width: 1500px) {
+                width: 464px;
+                height: 570px;
+            }
 
             .images {
                 border-radius: 12px;
