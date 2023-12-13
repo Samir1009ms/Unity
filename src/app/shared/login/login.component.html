@@ -1,5 +1,5 @@
 <section class="col-md-12 h-100  login d-none d-sm-flex align-items-center justify-content-center ">
-  <div class="d-flex container col-8 ">
+  <div class="d-flex justify-content-between  container col-8 ">
     <div class="col-3 container__left d-flex flex-column justify-content-between ">
       <div class="container__left-top">
         <div class="container__left-top_icons d-flex  align-items-center gap-3   ">
@@ -37,15 +37,17 @@
         </div>
         <span class="text_info">A Video Gaming Platfrom UI Kit</span>
       </div>
-      <div class="d-flex gap-3 flex-column ">
+      <div class="d-flex gap-3 flex-column container__left-bottom">
         @for (item of items; track $index) {
-        <div class="content d-flex col-12 ">
-          <div class="col-3 ">
+        <div class="content d-flex col-12 items">
+          <div class="items_img_content">
             <img class="w-100  images " src="{{item.img}}" alt="">
           </div>
-          <div class="col-9 text-danger ">
-            <h5>{{item.title}} <span style="font-size: 14px;color: aqua;" class="">{{item.status}}</span></h5>
-            <p class="after">{{item.view}} </p>
+          <div class="col-9 text-danger items_text_content">
+            <h5 class="title">{{item.title}} <span class="status">{{item.status}}</span></h5>
+            <p class="after"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="#FF754C" />
+              </svg> {{item.view}} </p>
           </div>
         </div>
         }

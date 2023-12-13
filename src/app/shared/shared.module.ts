@@ -15,7 +15,6 @@ import { IconsProviderModule } from '../icons-provider.module';
     SharedComponent,
     LoginComponent,
     FooterComponent,
-    NavbarComponent,
     RegisterComponent,
 
   ],

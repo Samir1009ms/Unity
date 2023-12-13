@@ -6,7 +6,7 @@
     // background-position: center center;
     // background-attachment: fixed;
     .container {
-        height: 60%;
+        height: 450px;
 
         &__left {
 
@@ -31,6 +31,58 @@
                     margin-bottom: 20px;
                 }
             }
+
+            &-bottom {
+                .items {
+
+                    &_img_content {
+                        width: 28%;
+
+                        .images {
+                            border-radius: 12px;
+                            height: 96px;
+                        }
+                    }
+
+                    &_text_content {
+                        padding-left: 10px;
+                        padding-top: 20px;
+
+                        .title {
+                            color: var(--color-white-white, #FFF);
+                            font-family: Inter;
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 18px;
+
+                            display: flex;
+                            flex-direction: column;
+
+                            .status {
+                                color: var(--color-dark-grey-neutral-deactive, #808191);
+                                font-family: Inter;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 16px;
+                            }
+
+                        }
+
+                        .after {
+
+                            color: var(--color-dark-grey-neutral-deactive, #808191);
+                            font-family: Inter;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 16px;
+                        }
+                    }
+
+                }
+            }
         }
 
         &__right {
@@ -41,7 +93,7 @@
 
             .images {
                 border-radius: 12px;
-                height: 96px;
+                height: 96px
             }
         }
     }
@@ -49,10 +101,7 @@
 }
 
 
-.images {
-    border-radius: 12px;
-    height: 96px;
-}
+
 
 .content {
     border-radius: 16px;
