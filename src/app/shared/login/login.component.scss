@@ -5,7 +5,7 @@
     // background-size: cover;
     // background-position: center center;
     // background-attachment: fixed;
-    .container {
+    .containers {
         height: 450px;
 
         &__left {
@@ -90,7 +90,7 @@
             border-radius: 16px;
             padding: 20px;
             height: 100%;
-            width: 360px;
+
 
             .images {
                 border-radius: 12px;
