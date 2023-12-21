@@ -86,10 +86,12 @@
         }
 
         &__right {
-            background: #ffffff;
+            background: rgba(255, 255, 255, 1);
             border-radius: 16px;
-            padding: 20px;
+            padding: 30px;
             height: 100%;
+            position: relative;
+
 
             @media screen and (min-width: 1500px) {
                 width: 464px;
@@ -99,6 +101,67 @@
             .images {
                 border-radius: 12px;
                 height: 96px
+            }
+
+            .anticon {
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+                width: 35px;
+                height: 35px;
+                border-radius: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+
+                svg {
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            .top {
+
+                padding-top: 20px;
+
+                .sign {
+                    color: var(--Text-Active, #11142D);
+                    font-family: Poppins;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: -1px;
+                }
+
+                .newUser {
+                    color: var(--Color-Dark---Grey---Neutral-DEACTIVE, #808191);
+                    font-feature-settings: 'clig' off, 'liga' off;
+                    /* caption/caption 2 - 12 */
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 16px;
+
+                    /* 133.333% */
+                    .create {
+                        color: #3F8CFF;
+                        text-decoration: none !important;
+                        font-feature-settings: 'clig' off, 'liga' off;
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 16px;
+                        /* 133.333% */
+                    }
+                }
             }
         }
     }

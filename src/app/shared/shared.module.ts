@@ -7,8 +7,10 @@ import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RegisterComponent } from './register/register.component';
-import { IconsProviderModule } from '../icons-provider.module';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzFormModule } from 'ng-zorro-antd/form';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,12 @@ import { IconsProviderModule } from '../icons-provider.module';
   imports: [
     CommonModule,
     SharedRoutingModule,
-    IconsProviderModule
+    ReactiveFormsModule,
+    FormsModule,
+    NzButtonModule,
+    NzInputModule,
+    NzFormModule,
+
   ]
 })
 export class SharedModule { }
